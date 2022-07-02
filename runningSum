@@ -1,0 +1,37 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class RunningSum {
+    public static void main(String[] args) {
+        // Get number of digits from user to initialize array
+        System.out.println("Enter number of digits to add up:");
+        Scanner input = new Scanner(System.in);
+        
+        int arraySize = input.nextInt();
+        int[] myArray = new int[arraySize];
+        
+        // Prompt user to enter specified number of digits to sum
+        System.out.println("Enter each digit in list followed by the ENTER key");
+        
+        // Initialize array of list of numbers
+        for (int i = 0; i < arraySize; i++) {
+          myArray[i] = input.nextInt();
+        }
+        System.out.println("The running sum of the array is:");
+        System.out.println(Arrays.toString(runningSum(myArray)));
+    }
+    public static int[] runningSum(int[] nums) {
+        // Initialize new array to same length as passed array
+        int[] result = new int[nums.length];
+        
+        // Initialize first element of result array with first element in nums
+        result[0] = nums[0];
+        
+        // Iterate through array
+        for (int i = 1; i < nums.length; i++) {
+            // Result at index 'i' is sum of result at 'i - 1' and element at 'i'
+            result[i] = result[i - 1] + nums[i];
+        }
+        return result;
+    }
+}
