@@ -1,5 +1,5 @@
-/* This program removes the duplicate integers in a sorted ascending integer array such that each unique element appears only once,
- * then returns the integer in which the new array ends */
+/* This program removes the duplicate integers in a sorted ascending integer array such that
+ * each unique element appears only once, then returns the integer in which the new array ends */
 
 public class RemoveDuplicates
 {
