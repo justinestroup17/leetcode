@@ -1,3 +1,6 @@
+/* This program given an array of integers nums and an integer target, 
+ * returns the indicies of the two numbers such that they add up to target */
+
 import java.util.Arrays;
 import java.util.Scanner;
 
