@@ -24,6 +24,7 @@ class IsomorphicStrings
         
         System.out.println("\nWould you like to compare strings again? \n Type 'Y' for yes or 'N' for no: ");
         answer = input.next().charAt(0);
+        input.nextLine(); // Take in newline char so next iteration starts with user string input
         } while ((answer == 'Y') || (answer == 'y'));
     }
     private static String transformString(String s)
