@@ -22,7 +22,7 @@ class IsomorphicStrings
         else
             System.out.println(isIsomorphic(stringOne, stringTwo));
         
-        System.out.println("\nWould you like to compare strings again? \n Type 'Y' for yes or 'N' for no: ");
+        System.out.println("\nWould you like to compare strings again? \nType 'Y' for yes or 'N' for no: ");
         answer = input.next().charAt(0);
         input.nextLine(); // Take in newline char so next iteration starts with user string input
         } while ((answer == 'Y') || (answer == 'y'));
